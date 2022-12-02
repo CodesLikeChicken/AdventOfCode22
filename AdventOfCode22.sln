@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventParser", "AdventParser\AdventParser.csproj", "{AB189AE0-A098-4F61-BDB9-35C7B3C4B2D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventParser", "AdventParser\AdventParser.csproj", "{AB189AE0-A098-4F61-BDB9-35C7B3C4B2D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day1\Day1.csproj", "{5384FB3F-0230-4EDE-98D4-6CBFFAAB9245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1", "Day1\Day1.csproj", "{5384FB3F-0230-4EDE-98D4-6CBFFAAB9245}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2", "Day2\Day2.csproj", "{95CC3381-7CBA-4A16-B121-0A043D2B1B49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5384FB3F-0230-4EDE-98D4-6CBFFAAB9245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5384FB3F-0230-4EDE-98D4-6CBFFAAB9245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5384FB3F-0230-4EDE-98D4-6CBFFAAB9245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CC3381-7CBA-4A16-B121-0A043D2B1B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CC3381-7CBA-4A16-B121-0A043D2B1B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CC3381-7CBA-4A16-B121-0A043D2B1B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CC3381-7CBA-4A16-B121-0A043D2B1B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
