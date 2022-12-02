@@ -1,12 +1,11 @@
 ﻿using AdventOfCode;
 
-Console.WriteLine("Hello, Day 2!");
+Console.WriteLine("Hello, Day 3!");
 
 var totalScore = 0;
 
 foreach(var input in InputParser.ParseLines("./Inputs/Input.txt"))
 {
-
     var inputs = InputParser.SplitInput(input, new List<string> { " " });
 
     totalScore += EvaluatePair(inputs[0], inputs[1]);
