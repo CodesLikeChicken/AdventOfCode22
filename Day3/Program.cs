@@ -13,7 +13,7 @@ foreach (var input in InputParser.ParseLines("./Inputs/Input.txt"))
     var second = input.Substring(inputLength / 2, inputLength / 2);
 
     var match = findDuplicate(first, second);
-    var matchValue = value(match);
+    var matchValue = evaluate(match);
     Console.WriteLine($"{match},{matchValue} in {input}");
 
     answer += matchValue;
@@ -32,27 +32,34 @@ foreach (var input in InputParser.ParseLines("./Inputs/Input.txt"))
 
         throw new KeyNotFoundException();
     }
-
-    int value(char letter)
-    {
-        if(letter >= 'a' && letter <= 'z')
-        {
-            return 1 + letter - 'a';
-        }
-        else
-        {
-            return 27 + letter - 'A';
-        }
-    }
-
 }
 
 Console.WriteLine($"Part 1 answer = {answer}");
 
 // Do part 2 here:
-foreach (var input in InputParser.ParseLines("./Inputs/Input.txt"))
-{
+answer = 0;
+var inputs = InputParser.ParseLines("./Inputs/Input.txt").ToList();
 
+for(int i = 0 ; i < inputs.Count; i += 3)
+{
+    var commonLetter = inputs[i]
+        .Intersect(inputs[i + 1])
+        .Intersect(inputs[i + 2])
+        .First();
+
+    answer += evaluate(commonLetter);
 }
 
 Console.WriteLine($"Part 2 answer = {answer}");
+
+int evaluate(char letter)
+{
+    if (letter >= 'a' && letter <= 'z')
+    {
+        return 1 + letter - 'a';
+    }
+    else
+    {
+        return 27 + letter - 'A';
+    }
+}
