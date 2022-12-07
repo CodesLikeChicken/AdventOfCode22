@@ -1,6 +1,6 @@
 ﻿using AdventOfCode;
 
-Console.WriteLine("Hello, Day 3!");
+Console.WriteLine("Hello, Day 2!");
 
 var totalScore = 0;
 
@@ -131,4 +131,4 @@ foreach (var input in InputParser.ParseLines("./Inputs/Input.txt"))
     }
 }
 
-Console.WriteLine($"Part 1 total score = {totalScore}");
+Console.WriteLine($"Part 2 total score = {totalScore}");
